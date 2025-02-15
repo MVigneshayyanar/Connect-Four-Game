@@ -26,7 +26,7 @@ body {
 
 .cell {
     width: 100%;
-    padding-bottom: 100%; /* This creates a square cell */
+    padding-bottom: 100%; 
     background-color: #ffffff;
     border: 2px solid #747474;
     border-radius: 50%;

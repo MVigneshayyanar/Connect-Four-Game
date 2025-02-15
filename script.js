@@ -41,10 +41,10 @@ function dropDisc(col) {
 }
 
 function checkWin(row, col) {
-    return checkDirection(row, col, 1, 0) || // Horizontal
-           checkDirection(row, col, 0, 1) || // Vertical
-           checkDirection(row, col, 1, 1) || // Diagonal /
-           checkDirection(row, col, 1, -1);  // Diagonal \
+    return checkDirection(row, col, 1, 0) || 
+           checkDirection(row, col, 0, 1) || 
+           checkDirection(row, col, 1, 1) || 
+           checkDirection(row, col, 1, -1);  
 }
 
 function checkDirection(row, col, rowInc, colInc) {
@@ -72,5 +72,4 @@ restartButton.addEventListener('click', () => {
     boardElement.style.pointerEvents = 'auto';
 });
 
-// Initialize the game board on page load
 createBoard();
